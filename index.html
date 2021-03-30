@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Shopping">
+    <meta name="keywords" content="HTML,CSS,JS,jQuery,Learning">
+    <meta name="author" content="Diana Mladin">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="bundles/jquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="info-wrapper">
+                <div class="title-text-wrapper">
+                    <h1>
+                        <div>SHOP AT</div>
+                        <div>THE RIGHT SPEED</div>
+                    </h1>
+                    <div>The Winter Collection</div>
+                    <div>Liberated movement meets seamless support</div>
+                </div>
+
+                <form class="shop-button-wrapper">
+                    <button type="button">SHOP</button>
+                </form>
+            </div>
+            <div class="icon-piggy-bank-wrapper">
+                <img src="assets/icon-piggy-bank.png" alt="">
+            </div>
+        </header>
+
+        <form class="clothes-button-wrapper">
+            <button type="button" class="selected" data-content="coats">Coats</button>
+            <button type="button" data-content="dresses">Dresses</button>
+            <button type="button" data-content="jersey">Jersey</button>
+            <button type="button" data-content="pants">Pants</button>
+        </form>
+
+        <main>
+            <section class="main-content-wrapper">
+                <!-- <div class="box-wrapper">
+                    <div class="coat-img-wrapper" style="background-image: url(assets/coats/${productObj.imgUrl})">
+                    </div>
+                    <div class="coat-info-wrapper">
+                        <div class="name-wrapper">${productObj.name}</div>
+                        <div class="price-wrapper">${`$${productObj.price}`}</div>
+                    </div>
+                </div> -->
+            </section>
+
+            <section class="overlay hidden">
+                <div class="close-wrapper">
+                    <img src="assets/close.png" alt="">
+                </div>
+                <div class="overlay-main-content-wrapper">
+                    <div class="coat-img-double-wrapper"></div>
+                    <div class="white-bg-radius-wrapper">
+                        <div class="name-of-coat-wrapper"></div>
+                        <div class="price-wrapper same-color"></div>
+                        <form>
+                            <div class="size-wrapper">
+                                <div>Your Size</div>
+                                <button type="button">S</button>
+                                <button type="button">M</button>
+                                <button type="button">L</button>
+                                <button type="button">XL</button>
+                            </div>
+                            <div class="overlay-top-buttons-wrapper">
+                                <button type="button" class="selected">Details</button>
+                                <button type="button">Order</button>
+                                <button type="button">Payment</button>
+                            </div>
+                        </form>
+                        <div class="composition-and-country-wrapper">
+                            <div class="composition-wrapper">
+                                <div>Composition</div>
+                                <div class="info-composition-wrapper same-color"></div>
+                            </div>
+                            <div class="country-wrapper">
+                                <div>Country</div>
+                                <div class="info-country-wrapper same-color"></div>
+                            </div>
+                        </div>
+                        <div class="care-wrapper">
+                            <div>Care</div>
+                            <div class="info-care-wrapper same-color"></div>
+                        </div>
+                        <form class="add-to-cart-button-wrapper">
+                            <button type="button">Add to Cart</button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <form class="categories-wrapper">
+            <div>Categories</div>
+            <div class="categories-buttons-wrapper">
+                <button type="button" class="selected">Women</button>
+                <button type="button">Men</button>
+                <button type="button">Kids</button>
+                <button type="button">New Collection</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="resources/products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
